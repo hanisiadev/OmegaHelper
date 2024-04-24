@@ -1,0 +1,90 @@
+if (one == "start")
+    {
+        system("cls");
+        cout << "Welcome to Omega Helper for windows." << endl;
+        cout << "Type 'help' if you want to see a command list." << endl;
+        for (;;)
+        {
+            cout << "Type command" << endl;
+            cin >> two;
+            if (two == "help")
+            {
+                system("cls");
+                cout << "Command list :" << endl << "help - command list and help" << endl << "info - go to credits" << endl << "shutoff - shut off the helper" << endl;
+                cout << "notepad - open notepad" << endl << "youtube - starting youtube : )" << endl << "opener - open section with app opener" << "tip - showing useful tips" << endl;
+                cin >> two;
+                system("cls");
+            }
+            if (two == "info")
+            {
+                system("cls");
+                cout << "Omega Helper" << endl;
+                cout << "Terminal Edition, build .EXE edition, only for testing purposes." << endl;
+                cout << "2021/2022, Untitled X STUDIO" << endl;
+                cout << "THIS PROJECT IS UNOFFICIAL PROJECT. THATS NOT MICROSOFT PRODUCT." << endl;
+                cin >> two;
+                system("cls");
+            }
+            if (two == "shutoff")
+            {
+                system("cls");
+                cout << "Do you really want to close Omega Heper?" << endl << "Y/N" << endl;
+                cin >> yesno;
+                if ((yesno == "Y") || (yesno == "y"))
+                {
+                    exit(0);
+                }
+                if ((yesno == "N") || (yesno == "n"))
+                {
+                    system("cls");
+                    cout << "OK, type any command";
+                    cin >> two;
+                    system("cls");
+                }
+            }
+            if (two == "notepad")
+            {
+                system("cls");
+                cout << "Starting..." << endl;
+                Sleep(50);
+                system("notepad.exe");
+                cout << "What now?" << endl;
+                cin >> two;
+                system("cls");
+            }
+            if (two == "youtube")
+            {
+                system("cls");
+                system("start http://youtube.com");
+                cout << "And Where We Go Now?" << endl;
+                cin >> two;
+                system("cls");
+            }
+            if (two == "opener")
+            {
+                system("cls");
+                cout << "Coming Soon!!" << endl;
+                Sleep(50);
+                cout << "Going Back??" << endl;
+                cin >> two;
+                system("cls");
+            }
+            if (two == "tip")
+            {
+                system("cls");
+                cout << "1. If command doesn't work, type this command second time." << endl;
+                Sleep(50);
+                cout << "Going Back??" << endl;
+                cin >> two;
+                system("cls");
+            }
+        }
+    }
+    else
+    {
+    system("cls");
+    cout << "Ups... please restart program" << endl;
+    cin >> one;
+    }
+
+    return 0;
